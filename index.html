@@ -6,11 +6,81 @@
 -->
 <html>
 	<head>
-		<title>Phantom by HTML5 UP</title>
+		<title>REBRANDING YOU!</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		.signin-container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+		}
+		.signin-box {
+			background-color: #fff;
+			padding: 40px;
+			border-radius: 5px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+			width: 400px;
+			text-align: center;
+		}
+		.signin-box h2 {
+			margin-bottom: 30px;
+			color: #333;
+		}
+		.input-group {
+			margin-bottom: 20px;
+			text-align: left;
+		}
+		.input-group label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+			color: #666;
+		}
+		.input-group input {
+			width: calc(100% - 12px);
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+		}
+		.forgot-password {
+			text-align: right;
+			margin-bottom: 15px;
+		}
+		.forgot-password a {
+			color: #007bff;
+			text-decoration: none;
+		}
+		.signup-link {
+			margin-top: 20px;
+		}
+		.signup-link a {
+			color: #007bff;
+			text-decoration: none;
+		}
+		.signup-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .signup-box {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        width: 400px;
+        text-align: center;
+    }
+    .signup-box h2 {
+        margin-bottom: 30px;
+        color: #333;
+    }
+	</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -22,7 +92,7 @@
 
 							<!-- Logo -->
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">REBRANDING YOU!</span>
 								</a>
 
 							<!-- Nav -->
@@ -40,99 +110,75 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="signUp.html"> Social Platform</a></li>
+							<li><a href="aboutMe.html"> About me</a></li>
+							<li><a href="generic.html"> Sign up/Log in</a></li>
 						</ul>
 					</nav>
 
-				<!-- Main -->
+					<header>
+						<h1>REBRANDING YOU!
+						 </h1>
+						<p>Ready to be/look like something new ? Well REBRANDING is the place for YOU!</p>
+					</header> 
+					
+					<div class="signin-container">
+						<div class="signin-box">
+							<h2>Sign In</h2>
+							<form action="#" method="post">
+								<div class="input-group">
+									<label for="username">Username:</label>
+									<input type="text" id="username" name="username" required>
+								</div>
+								<div class="input-group">
+									<label for="password">Password:</label>
+									<input type="password" id="password" name="password" required>
+								</div>
+								<div class="forgot-password">
+									<a href="#">Forgot password?</a>
+								</div>
+								<button type="submit">Sign In</button>
+							</form>
+							<div class="signup-link">
+								<p>Don't have an account? <a href="#">Sign Up</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="signup-container">
+						<div class="signup-box">
+							<h2>Sign Up</h2>
+							<form action="#" method="post">
+								<div class="input-group">
+									<label for="fullname">Full Name:</label>
+									<input type="text" id="fullname" name="fullname" required>
+								</div>
+								<div class="input-group">
+									<label for="email">Email:</label>
+									<input type="email" id="email" name="email" required>
+								</div>
+								<div class="input-group">
+									<label for="newusername">Choose Username:</label>
+									<input type="text" id="newusername" name="newusername" required>
+								</div>
+								<div class="input-group">
+									<label for="newpassword">Choose Password:</label>
+									<input type="password" id="newpassword" name="newpassword" required>
+								</div>
+								<button type="submit">Sign Up</button>
+							</form>
+							<div class="signin-link">
+								<p>Already have an account? <a href="signin.html">Sign In</a></p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Main -->
 					<div id="main">
 						<div class="inner">
-							<header>
-								<h1>This is Phantom, a free, fully responsive site<br />
-								template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
-								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
-							</header>
+							
 							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Magna</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Lorem</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Feugiat</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Tempus</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style5">
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Aliquam</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Veroeros</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style2">
-									<span class="image">
-										<img src="images/pic07.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Ipsum</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
+							
+							
 								<article class="style3">
 									<span class="image">
 										<img src="images/pic08.jpg" alt="" />
@@ -166,31 +212,13 @@
 										</div>
 									</a>
 								</article>
-								<article class="style6">
-									<span class="image">
-										<img src="images/pic11.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Dictum</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style4">
-									<span class="image">
-										<img src="images/pic12.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Pretium</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
 							</section>
+							
 						</div>
+						
 					</div>
+
+					
 
 				<!-- Footer -->
 					<footer id="footer">
